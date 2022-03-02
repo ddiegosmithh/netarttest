@@ -1,0 +1,23 @@
+@charset "UTF-8";
+body {padding: 0; margin: 0; background-color: #000000;}
+img {position: absolute;}
+.base {left: 496px;
+  top: 452px;}
+.microwave {
+  left: 802px;
+  top: 360px;
+}
+.fridge {
+  left: 41px;
+  top: 53px;
+}
+.window {
+  left: 1336px;
+  top: -48px; 
+}
+.teapot {
+  left: 1594px;
+  top: 537px;
+}
+.oven {left: 1287px;
+  top: 694px;}

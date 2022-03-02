@@ -1,0 +1,47 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>bedroom</title>
+<link href="styles.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+
+<img src="images/bedroom_0010_bedroombase.png" class="background" width="1920" height="1080" alt="background image"/>
+<a href="https://www.barnesandnoble.com" target="_blank">	
+<img src="images/bedroom_0009_Book.png" class="book" onMouseOver="this.src='images/BookSelected.png'; PlaySound('audio99')" onMouseOut="this.src='images/bedroom_0009_Book.png'; StopSound('audio99')" width="549" height="177" alt="book"/>
+	</a>
+<a href="kitchen.html" target="_blank">
+<img src="images/bedroom_0007_Door.png" class="door" onMouseOver="this.src='images/DoorSelected.png'" onMouseOut="this.src='images/bedroom_0007_Door.png'" alt="door"/>
+	</a>
+<img src="images/bedroom_0005_Figure.png" class="figure" onMouseOver="this.src='images/FigureInWindowSelected.png'" onMouseOut="this.src='images/bedroom_0005_Figure.png'" onMouseDown="this.src='images/bedroom_0000_demonface.png'; PlaySound('scream')" onMouseUp="this.src='images/bedroom_0005_Figure.png'; StopSound('scream')" alt="figure"/>
+<img src="images/bedroom_0003_Clock.png" class="clock" onMouseOver="this.src='images/ClockSelected.png'" onMouseOut="this.src='images/bedroom_0003_Clock.png'" onMouseDown="PlaySound('audio2')" onMouseUp="StopSound('audio2')" alt="alarmclock"/>
+<a href="computer2.html" target="_blank">
+<img src="images/bedroom_0001_Laptop.png" class="laptop" onMouseOver="this.src='images/laptoppp_0005_LaptopSelected.png'" onMouseOut="this.src='images/bedroom_0001_Laptop.png'" alt="laptop"/>
+	</a>
+<img src="images/bedroom_0002_i.png" class="I" width="38" height="68" alt="i"/>
+<img src="images/bedroom_0001_can’t.png" class="CANT" onMouseOver="this.src='images/bedroom_0000_wontred.png'" onMouseOut="this.src='images/bedroom_0001_can’t.png'" width="231" height="96" alt="cant"/>
+<img src="images/bedroom_0000_sleep....png" class="SLEEP" width="325" height="111" alt="sleep"/>
+	
+<audio loop id="audio2">
+    <source src="audio/alarm.mp3" type="audio/mp3">
+  </audio>
+<audio loop id="audio99">
+    <source src="audio/pageflip.mp3" type="audio/mp3">
+  </audio>
+	<audio loop id="scream">
+    <source src="audio/scream.mp3" type="audio/mp3">
+  </audio>
+<script>
+function PlaySound(sound) {
+    	var thissound=document.getElementById(sound);
+    	thissound.play();}
+
+function StopSound(sound) {
+    	var thissound=document.getElementById(sound);
+    	thissound.pause();
+		thissound.currentTime = 0;}
+	</script>	
+</body>
+</html>

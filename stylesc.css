@@ -1,0 +1,24 @@
+@charset "UTF-8";
+img {position: absolute;}
+.r1c1{left: 0px; top: 0px;}
+.r1c2{left: 480px; top: 0px;}
+.r1c3{left: 960px; top: 0px;}
+.r1c4{left: 1440px;
+  top: 0px;}
+.r2c1{left: 0px;
+  top: 360px;}
+.r2c2{left: 480px;
+  top: 360px;}
+.r2c3{left: 960px;
+  top: 360px;}
+.r2c4{left: 1440px;
+  top: 360px;}
+.r3c1{left: 0px;
+  top: 720px;}
+.r3c2{left: 480px;
+  top: 720px}
+.r3c3 {left: 960px;
+	top: 720px;}
+.r3c4 {left: 1440px;
+	top: 720px;}
+

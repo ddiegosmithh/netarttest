@@ -1,0 +1,24 @@
+@charset "UTF-8";
+body {padding: 0; margin: 0; background-color: #000000;}
+img {position: absolute;}
+.door {left: 1614px; top: 0px;}
+.laptop {left: 1116px; top: 501px;}
+.book {left: 1065px; top: 868px;}
+.figure {left: 369px; top: 75px;}
+.clock {left: 321px; top: 588px;}
+.I {left: 876px;
+  top: 116px;}
+.CANT {left: 950px;
+  top: 118px;} 
+.SLEEP{left: 1227px;
+  top: 151px;}
+.anything_but_sleep_huh_ {
+  background-image: url("anything but sleep huh?.png");
+  position: absolute;
+  left: 1151px;
+  top: 548px;
+  width: 154px;
+  height: 53px;
+  z-index: 18;
+}
+

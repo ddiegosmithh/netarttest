@@ -1,0 +1,46 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>kitchen</title>
+<link href="styles1.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+<img src="images/kitchen_0008_BASE.png" class="base" width="1424" height="628" alt="background"/>
+<img src="images/kitchen_0007_Teapot.png" class="teapot" onMouseOver="this.src='images/kitchen_0006_TeapotSelected.png'" onMouseOut="this.src='images/kitchen_0007_Teapot.png'" onMouseDown="PlaySound('audio1')" onMouseUp="StopSound('audio1')" width="232" height="153" alt="teapot"/>
+	
+<img src="images/kitchen_0005_Window.png" class="window" onMouseOver="this.src='images/kitchen_0006_WindowSelected.png'" onMouseOut="this.src='images/kitchen_0005_Window.png'" onMouseDown="PlaySound('audio2')" onMouseUp="StopSound('audio2')" width="401" height="492" alt="window"/>
+	
+<img src="images/kitchen_0003_Fridge.png" class="fridge" onMouseOver="this.src='images/kitchen_0000_FoodInFridge.png'" onMouseOut="this.src='images/kitchen_0003_Fridge.png'" width="455" height="888" alt="fridge"/>
+	
+<img src="images/kitchen_0001_Microwave.png" class="microwave" onMouseOver="this.src='images/kitchen_0000_FoodInMicrowave.png'; PlaySound('audio3')" onMouseOut="this.src='images/kitchen_0001_Microwave.png'; StopSound('audio3')" alt="microwave"/>
+
+
+<img src="images/kitchen_0012_Oven.png" class="oven" onMouseOver="this.src='images/kitchen_0011_Oven-Hover.png'" onMouseOut="this.src='images/kitchen_0012_Oven.png'" onMouseDown="this.src='images/kitchen_0010_Oven-Click.png'" onMouseUp="this.src='images/kitchen_0012_Oven.png'" alt="oven">
+
+	
+	
+	
+<audio loop id="audio1">
+    <source src="audio/kettle.mp3" type="audio/mp3">
+  </audio>
+<audio loop id="audio2">
+    <source src="audio/thudner.mp3" type="audio/mp3">
+  </audio>
+	<audio loop id="audio3">
+    <source src="audio/microwave-oven-bell-1.mp3" type="audio/mp3">
+  </audio>
+
+<script>
+function PlaySound(sound) {
+    	var thissound=document.getElementById(sound);
+    	thissound.play();}
+
+function StopSound(sound) {
+    	var thissound=document.getElementById(sound);
+    	thissound.pause();
+		thissound.currentTime = 0;}
+	</script>	
+</body>
+</html>
